@@ -152,14 +152,14 @@ Passionate about creating clean, responsive web and mobile applications using HT
                   <motion.div
                     key={i}
                     className="skill-card"
-                    initial={{ opacity: 0, x: -30 }}
-                    whileInView={{ opacity: 1, x: 0 }}
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
                     whileHover="hover"
                     variants={cardHover}
                     viewport={{ once: true }}
-                    transition={{ duration: 0.6, delay: i * 0.1 }}
+                    transition={{ duration: 0.5, delay: i * 0.1 }}
                   >
-                    {skill.name}
+                    <span>{skill.name}</span>
                   </motion.div>
                 ))}
               </div>
